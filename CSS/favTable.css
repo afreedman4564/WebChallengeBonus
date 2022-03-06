@@ -1,0 +1,23 @@
+.favTable caption{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.favTablePad th{
+    /* 1st number is top/bottom and 2nd is left/right...if add more than top, right, bottom and left may need to research unclear in class */
+    padding: 5pt 175pt 20pt 20pt;
+}
+
+.favTable th{
+    /* 1st number is top/bottom and 2nd is left/right...if add more than top, right, bottom and left may need to research unclear in class */
+    padding: 5pt 20pt 20pt 20pt;
+}
+
+.favTable td{
+    padding: 20pt 20pt 20pt 20pt;
+}
+/* can go to even or odd rows */
+.favTable tr:nth-child(even){
+    background-color: red;
+}

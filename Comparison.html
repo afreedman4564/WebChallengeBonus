@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Home Page</title>
+    <link rel="stylesheet" type="text/css" href="CSS/favTable.css">
+    <link rel="stylesheet" type="text/css" href="CSS/mediaQuery.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+</head>
+<body>
+    <nav class="nav nav-pills flex-column flex-sm-row gray">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Plots</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="GTTemp.html">Global Temperature</a>
+                <a class="dropdown-item" href="GTHumidity.html">Global Humidity</a>
+                <a class="dropdown-item" href="GTCloud.html">Global Cloudiness</a>
+                <a class="dropdown-item" href="GTWind.html">Global Wind Speed</a>
+                <a class="dropdown-item" href="SHTemp.html">Southern Hemisphere Temperature</a>
+                <a class="dropdown-item" href="SHHumidity.html">Southern Hemisphere Humidity</a>
+                <a class="dropdown-item" href="SHCloud.html">Southern Hemisphere Cloudiness</a>
+                <a class="dropdown-item" href="SHWind.html">Southern Hemisphere Wind Speed</a>
+                <a class="dropdown-item" href="NHTemp.html">Northern Hemisphere Temperature</a>
+                <a class="dropdown-item" href="NHHumidity.html">Northern Hemisphere Humidity</a>
+                <a class="dropdown-item" href="NHCloud.html">Northern Hemisphere Cloudiness</a>
+                <a class="dropdown-item" href="NHWind.html">Northern Hemisphere Wind Speed</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Comparison.html">Comparisons</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Data.html">Data</a>
+            </li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    
+    <nav id="navigationList">
+        <div class = "container">
+            <!-- specify rows and columns -->
+            <!-- important to use white space when building bootstrap, otherwise difficult to read -->
+            <!-- bootstrap row -->
+            <div class = "row">
+                <div class = "col-xs-12">
+                    <h1 class="alignLeft">Correlation Comparisons</h1> <br>
+                </div>
+            </div>
+
+            <br>
+            <hr>
+            <br>
+
+            <div class = "row">
+                <div class = "col-xs-5">
+                    <h2 class="alignLeft">Visualizations</h2> <br>
+                    <h4 class="alignLeft">Global</h4>
+                </div>
+            </div>
+
+            <div class = "row">
+            <table class="favTable">
+                <tr class = "alignCenter">
+                    <th><a href="GTTemp.html">
+                        <img src="Visualizations/GlobalLatitudeVs.MaxTemperature.png" width = "650" height="325" title="Thermometer"></img></a>
+                        <a href="GTTemp.html">Temperature</a>
+                    </th>
+                    <th><a href="GTHumidity.html">
+                        <img src="Visualizations/GlobalLatitudeVs.Humidity.png" width = "650" height="325" title="Humidity"></img></a>
+                        <a href="GTHumidity.html">Humidity</a>
+                    </th>
+                </tr>
+            </table>
+            </div>
+
+            <div class = "row">
+            <table class="favTable">
+                <tr class = "alignCenter">
+                    <th><a href="GTCloud.html">
+                        <img src="Visualizations/GlobalLatitudeVs.Cloudiness.png" width = "650" height="325" title="Cloudiness"></img></a>
+                        <a href="GTCloud.html">Cloudiness</a>
+                    </th>
+                    <th><a href="GTWind.html">
+                        <img src="Visualizations/GlobalLatitudeVs.WindSpeed.png" width = "650" height="325" title="Wind Speed"></img></a>
+                        <a href="GTWind.html">Wind Speed</a>
+                    </th>
+                </tr>
+            </table>
+            </div>
+
+            <div class = "row">
+                <div class = "col-xs-5">
+                    <h4 class="alignLeft">Northern Hemisphere</h4> <br>
+                </div>
+            </div>
+
+            <div class = "row">
+            <table class="favTable">
+                <tr class = "alignCenter">
+                    <th><a href="NHTemp.html">
+                        <img src="Visualizations/NorthernHemisphereLatitudeVs.MaxTemperature.png" width = "650" height="325" title="Temperature"></img></a>
+                        <a href="NHTemp.html">Temperature</a>
+                    </th>
+                    <th><a href="NHHumidity.html">
+                        <img src="Visualizations/NorthernHemisphereLatitudeVs.Humidity.png" width = "650" height="325" title="Humidity"></img></a>
+                        <a href="NHHumidity.html">Humidity</a>
+                    </th>
+                </tr>
+            </table>
+            </div>
+
+            <div class = "row">
+            <table class="favTable">
+                <tr class = "alignCenter">
+                    <th><a href="NHCloud.html">
+                        <img src="Visualizations/NorthernHemisphereLatitudeVs.Cloudiness.png" width = "650" height="325" title="Cloudiness"></img></a>
+                        <a href="NHCloud.html">Cloudiness</a>
+                    </th>            
+                    <th><a href="NHWind.html">
+                        <img src="Visualizations/NorthernHemisphereLatitudeVs.WindSpeed.png" width = "650" height="325" title="Wind Speed"></img></a>
+                        <a href="NHWind.html">Wind Speed</a>
+                    </th>
+                </tr>
+            </table>
+            </div>
+
+            <div class = "row">
+                <div class = "col-xs-5">
+                    <h4 class="alignLeft">Southern Hemisphere</h4> <br>
+                </div>
+            </div>
+
+            <div class = "row">
+            <table class="favTable">
+                <tr class = "alignCenter">
+                    <th><a href="SHTemp.html">
+                        <img src="Visualizations/SouthernHemisphereLatitudeVs.MaxTemperature.png" width = "650" height="325" title="Temperature"></img></a>
+                        <a href="SHTemp.html">Temperature</a>
+                    </th>
+                    <th><a href="SHHumidity.html">
+                        <img src="Visualizations/SouthernHemisphereLatitudeVs.Humidity.png" width = "650" height="325" title="Humidity"></img></a>
+                        <a href="SHHumidity.html">Humidity</a>
+                    </th>
+                </tr>
+            </table>
+            </div>
+            
+            <div class = "row">
+            <table class="favTable">
+                <tr class = "alignCenter">
+                    <th><a href="SHCloud.html">
+                        <img src="Visualizations/SouthernHemisphereLatitudeVs.Cloudiness.png" width = "650" height="325" title="Cloudiness"></img></a>
+                        <a href="SHCloud.html">Cloudiness</a>
+                    </th>
+                    <th><a href="SHWind.html">
+                        <img src="Visualizations/SouthernHemisphereLatitudeVs.WindSpeed.png" width = "650" height="325" title="Wind Speed"></img></a>
+
+                        <a href="SHWind.html">Wind Speed</a>
+                    </th>
+                </tr>
+            </table>
+            </div>
+        </div>
+    </nav>
+
+    <nav id="smallScreenNav">
+        <div class = "container">
+            <!-- specify rows and columns -->
+            <!-- important to use white space when building bootstrap, otherwise difficult to read -->
+            <!-- bootstrap row -->
+            <div class = "row">
+                <div class = "col-xs-12">
+                    <h1 class="alignLeft">Correlation Comparisons</h1> <br>
+                </div>
+            </div>
+
+            <br>
+            <hr>
+            <br>
+
+            <div class = "row">
+                <div class = "col-xs-5">
+                    <h2 class="alignLeft">Visualizations</h2> <br>
+                    <h4 class="alignLeft">Global</h4>
+                </div>
+            </div>
+
+            <div class = "row">
+            <table class="favTable">
+                <tr class = "alignCenter">
+                    <th><a href="GTTemp.html">
+                        <img src="Visualizations/GlobalLatitudeVs.MaxTemperature.png" width = "450" height="225" title="Thermometer"></img></a>
+                        <a href="GTTemp.html">Temperature</a>
+                    </th>
+                </tr>
+            </table>
+
+            <table class="favTable">
+                <tr class = "alignCenter">
+                    <th><a href="GTHumidity.html">
+                        <img src="Visualizations/GlobalLatitudeVs.Humidity.png" width = "450" height="225" title="Humidity"></img></a>
+                        <a href="GTHumidity.html">Humidity</a>
+                    </th>
+                </tr>
+            </table>
+
+            <table class="favTable">
+                <tr class = "alignCenter">
+                    <th><a href="GTCloud.html">
+                        <img src="Visualizations/GlobalLatitudeVs.Cloudiness.png" width = "450" height="225" title="Cloudiness"></img></a>
+                        <a href="GTCloud.html">Cloudiness</a>
+                    </th>
+                </tr>
+            </table>
+            <table class="favTable">
+                <tr class = "alignCenter">
+                    <th><a href="GTWind.html">
+                        <img src="Visualizations/GlobalLatitudeVs.WindSpeed.png" width = "450" height="225" title="Wind Speed"></img></a>
+
+                        <a href="GTWind.html">Wind Speed</a>
+                    </th>
+                </tr>
+            </table>
+            </div>
+
+            <div class = "row">
+                <div class = "col-xs-5">
+                    <h4 class="alignLeft">Northern Hemisphere</h4> <br>
+                </div>
+            </div>
+            
+            <div class = "row">
+            <table class="favTable">
+                <tr class = "alignCenter">
+                    <th><a href="NHTemp.html">
+                        <img src="Visualizations/NorthernHemisphereLatitudeVs.MaxTemperature.png" width = "450" height="225" title="Temperature"></img></a>
+                        <a href="NHTemp.html">Temperature</a>
+                    </th>
+                </tr>
+            </table>
+
+            <table class="favTable">
+                <tr class = "alignCenter">
+                    <th><a href="NHHumidity.html">
+                        <img src="Visualizations/NorthernHemisphereLatitudeVs.Humidity.png" width = "450" height="225" title="Humidity"></img></a>
+                        <a href="NHHumidity.html">Humidity</a>
+                    </th>
+                </tr>
+            </table>
+
+            <table class="favTable">
+                <tr class = "alignCenter">
+                    <th><a href="NHCloud.html">
+                        <img src="Visualizations/NorthernHemisphereLatitudeVs.Cloudiness.png" width = "450" height="225" title="Cloudiness"></img></a>
+                        <a href="NHCloud.html">Cloudiness</a>
+                    </th>
+                </tr>
+            </table>
+
+            <table class="favTable">
+                <tr class = "alignCenter">
+                    <th><a href="NHWind.html">
+                        <img src="Visualizations/NorthernHemisphereLatitudeVs.WindSpeed.png" width = "450" height="225" title="Wind Speed"></img></a>
+
+                        <a href="NHWind.html">Wind Speed</a>
+                    </th>
+                </tr>
+            </table>
+            </div>
+
+            <div class = "row">
+                <div class = "col-xs-5">
+                    <h4 class="alignLeft">Southern Hemisphere</h4> <br>
+                </div>
+            </div>
+
+            <div class = "row">
+            <table class="favTable">
+                <tr class = "alignCenter">
+                    <th><a href="SHTemp.html">
+                        <img src="Visualizations/SouthernHemisphereLatitudeVs.MaxTemperature.png" width = "450" height="225" title="Temperature"></img></a>
+                        <a href="SHTemp.html">Temperature</a>
+                    </th>
+                </tr>
+            </table>
+
+            <table class="favTable">
+                <tr class = "alignCenter">
+                    <th><a href="SHHumidity.html">
+                        <img src="Visualizations/SouthernHemisphereLatitudeVs.Humidity.png" width = "450" height="225" title="Humidity"></img></a>
+                        <a href="SHHumidity.html">Humidity</a>
+                    </th>
+                </tr>
+            </table>
+            
+            <table class="favTable">
+                <tr class = "alignCenter">
+                    <th><a href="SHCloud.html">
+                        <img src="Visualizations/SouthernHemisphereLatitudeVs.Cloudiness.png" width = "450" height="225" title="Cloudiness"></img></a>
+                        <a href="SHCloud.html">Cloudiness</a>
+                    </th>
+                </tr>
+            </table>
+
+            <table class="favTable">
+                <tr class = "alignCenter">
+                    <th><a href="SHWind.html">
+                        <img src="Visualizations/SouthernHemisphereLatitudeVs.WindSpeed.png" width = "450" height="225" title="Wind Speed"></img></a>
+                        <a href="SHWind.html">Wind Speed</a>
+                    </th>
+                </tr>
+            </table>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+    <hr>
+    <br>
+
+    <footer>
+        <p>&copy; 2022, Bootcamp!</p>
+    </footer>
+    </center>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

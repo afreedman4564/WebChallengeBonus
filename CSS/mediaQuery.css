@@ -1,0 +1,24 @@
+
+@media(max-width: 640px)
+{
+    #navigationList{
+        /* visibility: hidden !important; */
+        display: none;   
+        
+    }
+    #smallScreenNav{
+        visibility: visible;
+    }
+}   
+
+@media(min-width: 641px)
+{
+    #navigationList{
+        visibility: visible !important;
+    }  
+    
+    #smallScreenNav{
+        /* visibility: hidden; */
+        display: none;   
+    }
+}

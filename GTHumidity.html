@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Humidity Scatter Plot</title>
+    <link rel="stylesheet" type="text/css" href="CSS/favTable.css">
+    <link rel="stylesheet" type="text/css" href="CSS/mediaQuery.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+</head>
+<body>
+    <nav class="nav nav-pills flex-column flex-sm-row gray">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Plots</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="GTTemp.html">Global Temperature</a>
+                <a class="dropdown-item active" href="GTHumidity.html">Global Humidity</a>
+                <a class="dropdown-item" href="GTCloud.html">Global Cloudiness</a>
+                <a class="dropdown-item" href="GTWind.html">Global Wind Speed</a>
+                <a class="dropdown-item" href="SHTemp.html">Southern Hemisphere Temperature</a>
+                <a class="dropdown-item" href="SHHumidity.html">Southern Hemisphere Humidity</a>
+                <a class="dropdown-item" href="SHCloud.html">Southern Hemisphere Cloudiness</a>
+                <a class="dropdown-item" href="SHWind.html">Southern Hemisphere Wind Speed</a>
+                <a class="dropdown-item" href="NHTemp.html">Northern Hemisphere Temperature</a>
+                <a class="dropdown-item" href="NHHumidity.html">Northern Hemisphere Humidity</a>
+                <a class="dropdown-item" href="NHCloud.html">Northern Hemisphere Cloudiness</a>
+                <a class="dropdown-item" href="NHWind.html">Northern Hemisphere Wind Speed</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Comparison.html">Comparisons</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Data.html">Data</a>
+            </li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    
+    <div class = "container">
+        <!-- specify rows and columns -->
+        <!-- important to use white space when building bootstrap, otherwise difficult to read -->
+        <!-- bootstrap row -->
+        <div class = "row">
+            <div class = "col-xs-12">
+                <h1 class="alignLeft">Global Humidity Overview</h1> <br>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class = "alignCenter">
+        <a href="Visualizations/GlobalLatitudeVs.Humidity.png">
+                    <img src="Visualizations/GlobalLatitudeVs.Humidity.png" width="1200" height="600" title="Humidity"></img>
+        </a>
+    </div>
+    <br><br>        
+
+    <div class = "row">
+        <div class="col">
+        </div>
+        <div class="col-6">
+            <p class = "alignLeft">Linear regression was run for each relationship globally. Additionally, a similar exercise was 
+                    performed for cities located in the Northern (greater than or equal to 0 degrees latitude) and 
+                    Southern (less than 0 degrees latitude) Hemispheres.
+            </p>
+        </div>
+        <div class="col">
+        </div>
+    </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <footer>
+            <p>&copy; 2022, Bootcamp!</p>
+        </footer>
+    </center>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
