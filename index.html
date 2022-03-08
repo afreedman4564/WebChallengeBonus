@@ -14,8 +14,32 @@
     crossorigin="anonymous">
 </head>
 <body>
-    <nav class="nav nav-pills flex-column flex-sm-row gray">
-        <ul class="nav nav-pills">
+    <nav id="smallScreenNav">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Plots</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="CapomulinTreatmenti509.html">Capomulin Treatment Mouse i509</a>
+                  <a class="dropdown-item" href="DrugRegimenStatistics.html">Drug Regimen Statistics</a>
+                  <a class="dropdown-item" href="DrugRegimenTimepoint.html">Drug Regimen Timepoint</a>
+                  <a class="dropdown-item" href="MiceDistribution.html">Mice Gender Distribution</a>
+                  <a class="dropdown-item" href="TumorVolume.html">Tumor Volume</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Comparison.html">Comparisons</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Data.html">Data</a>
+            </li>
+        </ul>
+    </nav>
+
+    <nav id="navigationList">
+        <ul class="nav nav-pills flex-column flex-sm-row gray">
             <li class="nav-item">
               <a class="nav-link active" href="index.html">Home</a>
             </li>
@@ -59,13 +83,8 @@
 
         <div class = "row">
             <div class="col-xs-12">
-                <p>Pymaceuticals specializes in anti-cancer pharmaceuticals. In its most recent efforts, it began screening for potential treatments for 
-                   squamous cell carcinoma (SCC), a commonly occurring form of skin cancer. Evalue regimen performance of most recent animal study.
-                   In this study, 249 mice identified with SCC tumor growth were treated through a variety of drug regimens. 
-                   Over the course of 45 days, tumor development was observed and measured. The purpose of this study was to compare the performance of 
-                   Pymaceuticals' drug of interest, Capomulin, versus the other treatment regimens. You have been tasked by the executive team to 
-                   generate all of the tables and figures needed for the technical report of the study. The executive team also has asked for a top-level 
-                   summary of the study results.
+                <p>Various cancer treatement regimens evaluated in a recent mice study. 249 mice were included in the study, including both male and female mice. 
+                   The purpose of this study was to compare the performance of the treatments on tumor size for the subjects. This website shares some observations of the study.
                 </p>
             </div>
         </div>
@@ -79,32 +98,91 @@
             </div>
         </div>
 
-        <div class = "row">
-        <table class="favTable">
-            <tr class = "alignCenter">
-                <th><a href="DrugRegimenStatistics.html">
-                    <img src="Visualizations/DrugRegimenStatistics.png" width = "250" height="125" title="Drug Regimen Statistics"></img></a>
-                    <a href="DrugRegimenStatistics.html">Regimen Statistics</a>
-                </th>
-                <th><a href="DrugRegimenTimepoint.html">
-                    <img src="Visualizations/DrugRegimenTimepoint.png" width = "250" height="125" title="Drug Regimen Timepoint"></img></a>
-                    <a href="DrugRegimenTimepoint.html">Regiment Timepoint</a>
-                </th>
-                <th><a href="MiceDistribution.html">
-                    <img src="Visualizations/MiceDistribution.png" width = "125" height="125" title="Mice Gender Distribution"></img></a>   
-                    <a href="MiceDistribution.html">Mice Gender Distribution</a>
-                </th>
-                <th><a href="TumorVolume.html">
-                    <img src="Visualizations/TumorVolumeBoxPlot.png" width="250" height="125" title="Tumor Box Plot"></img></a>
-                    <a href="TumorVolume.html">Box Plot</a>
-                </th>
-                <th><a href="CapomulinTreatmenti509.html">
-                    <img src="Visualizations/CapomulinTreatmenti509.png" width="250" height="125" title="Capomulin Treatiment - Mice Id 509"></img></a>
-                    <a href="CapomulinTreatmenti509.html">Mice Id 509</a>
-                </th>
-            </tr>
-        </table>
-        </div>
+        <nav id="navigationList">
+            <div class = "row">
+            <table class="favTable">
+                <tr class = "alignCenter">
+                    <th><a href="DrugRegimenStatistics.html">
+                        <img src="Visualizations/DrugRegimenStatistics.png" width = "250" height="125" title="Drug Regimen Statistics"></img></a>
+                        <a href="DrugRegimenStatistics.html">Regimen Statistics</a>
+                    </th>
+                    <th><a href="DrugRegimenTimepoint.html">
+                        <img src="Visualizations/DrugRegimenTimepoint.png" width = "250" height="125" title="Drug Regimen Timepoint"></img></a>
+                        <a href="DrugRegimenTimepoint.html">Regiment Timepoint</a>
+                    </th>
+                    <th><a href="MiceDistribution.html">
+                        <img src="Visualizations/MiceDistribution.png" width = "125" height="125" title="Mice Gender Distribution"></img></a>   
+                        <a href="MiceDistribution.html">Mice Gender Distribution</a>
+                    </th>
+                    <th><a href="TumorVolume.html">
+                        <img src="Visualizations/TumorVolumeBoxPlot.png" width="250" height="125" title="Tumor Box Plot"></img></a>
+                        <a href="TumorVolume.html">Box Plot</a>
+                    </th>
+                    <th><a href="CapomulinTreatmenti509.html">
+                        <img src="Visualizations/CapomulinTreatmenti509.png" width="250" height="125" title="Capomulin Treatiment - Mice Id 509"></img></a>
+                        <a href="CapomulinTreatmenti509.html">Mice Id 509</a>
+                    </th>
+                </tr>
+            </table>
+            </div>
+        </nav>
+
+        <nav id="smallScreenNav">
+            <div class = "row">
+            <table class="favTable">
+                <tr class = "alignCenter">
+                    <th><a href="DrugRegimenStatistics.html">
+                        <img src="Visualizations/DrugRegimenStatistics.png" width = "250" height="125" title="Drug Regimen Statistics"></img></a><br>
+                        <a href="DrugRegimenStatistics.html">Regimen Statistics</a>
+                    </th>
+                </tr>
+            </table>
+            </div>
+
+            <div class = "row">
+            <table class="favTable">
+                <tr class = "alignCenter">        
+                    <th><a href="DrugRegimenTimepoint.html">
+                        <img src="Visualizations/DrugRegimenTimepoint.png" width = "250" height="125" title="Drug Regimen Timepoint"></img></a><br>
+                        <a href="DrugRegimenTimepoint.html">Regiment Timepoint</a>
+                    </th>
+                </tr>
+            </table>
+            </div>
+            
+            <div class = "row">
+            <table class="favTable">
+                <tr class = "alignCenter">    
+                    <th><a href="MiceDistribution.html">
+                        <img src="Visualizations/MiceDistribution.png" width = "125" height="125" title="Mice Gender Distribution"></img></a><br>
+                        <a href="MiceDistribution.html">Mice Gender Distribution</a>
+                    </th>
+                </tr>
+            </table>
+            </div>
+        
+            <div class = "row">
+            <table class="favTable">
+                <tr class = "alignCenter"> 
+                     <th><a href="TumorVolume.html">
+                        <img src="Visualizations/TumorVolumeBoxPlot.png" width="250" height="125" title="Tumor Box Plot"></img></a><br>
+                        <a href="TumorVolume.html">Box Plot</a>
+                    </th>
+                </tr>
+            </table>
+            </div>
+            
+            <div class = "row">
+            <table class="favTable">
+                <tr class = "alignCenter"> 
+                    <th><a href="CapomulinTreatmenti509.html">
+                        <img src="Visualizations/CapomulinTreatmenti509.png" width="250" height="125" title="Capomulin Treatiment - Mice Id 509"></img></a><br>
+                        <a href="CapomulinTreatmenti509.html">Mice Id 509</a>
+                    </th>
+                </tr>
+            </table>
+            </div>
+        </nav>
 
         <br>
         <hr>

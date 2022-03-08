@@ -14,23 +14,47 @@
     crossorigin="anonymous">
 </head>
 <body>
-    <nav class="nav nav-pills flex-column flex-sm-row gray">
-        <ul class="nav nav-pills">
+    <nav id="smallScreenNav">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Plots</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="CapomulinTreatmenti509.html">Capomulin Treatment Mouse i509</a>
+                  <a class="dropdown-item" href="DrugRegimenStatistics.html">Drug Regimen Statistics</a>
+                  <a class="dropdown-item" href="DrugRegimenTimepoint.html">Drug Regimen Timepoint</a>
+                  <a class="dropdown-item" href="MiceDistribution.html">Mice Gender Distribution</a>
+                  <a class="dropdown-item" href="TumorVolume.html">Tumor Volume</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Comparison.html">Comparisons</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Data.html">Data</a>
+            </li>
+        </ul>
+    </nav>
+
+    <nav id="navigationList">
+        <ul class="nav nav-pills flex-column flex-sm-row gray">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Plots</a>
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Plots</a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="CapomulinTreatmenti509.html">Capomulin Treatment Mouse i509</a>
-                <a class="dropdown-item active" href="DrugRegimenStatistics.html">Drug Regimen Statistics</a>
+                <a class="dropdown-item" href="DrugRegimenStatistics.html">Drug Regimen Statistics</a>
                 <a class="dropdown-item" href="DrugRegimenTimepoint.html">Drug Regimen Timepoint</a>
                 <a class="dropdown-item" href="MiceDistribution.html">Mice Gender Distribution</a>
                 <a class="dropdown-item" href="TumorVolume.html">Tumor Volume</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Comparison.html">Comparisons</a>
+              <a class="nav-link active" href="Comparison.html">Comparisons</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="Data.html">Data</a>
@@ -40,35 +64,67 @@
     <br>
     <br>
     
-    <div class = "container">
-        <!-- specify rows and columns -->
-        <!-- important to use white space when building bootstrap, otherwise difficult to read -->
-        <!-- bootstrap row -->
-        <div class = "row">
-            <div class = "col-xs-12">
-                <h1 class="alignLeft">Drug Regimen Statistics</h1> <br>
+    <nav id="navigationList">
+        <div class = "container">
+            <!-- specify rows and columns -->
+            <!-- important to use white space when building bootstrap, otherwise difficult to read -->
+            <!-- bootstrap row -->
+            <div class = "row">
+                <div class = "col-xs-12">
+                    <h1 class="alignLeft">Drug Regimen Statistics</h1> <br>
+                </div>
             </div>
         </div>
-    </div>
-    <br><br>
-    <div class = "alignCenter">
-        <a href="Visualizations/DrugRegimenStatistics.png">
-                    <img src="Visualizations/DrugRegimenStatistics.png" width="910" height="700" title="Humidity"></img>
-        </a>
-    </div>
-    <br><br>        
+        <br><br>
+        <div class = "alignCenter">
+            <a href="Visualizations/DrugRegimenStatistics.png">
+                        <img src="Visualizations/DrugRegimenStatistics.png" width="910" height="700" title="Humidity"></img>
+            </a>
+        </div>
+        <br><br>        
 
-    <div class = "row">
-        <div class="col">
+        <div class = "row">
+            <div class="col">
+            </div>
+            <div class="col-6">
+                <p class = "alignLeft">The two regimens appearing most effective are Capomulin and Ramicane. These regimens are the only ones included in the study with a mean below low. In fact each is below 25 millimeters cubed. Additionally, these two regimens have the lowest standard deviations of all other regimens included in the studied. These regimens may be the most initially chosen treatment options for patients with tumors.
+                </p>
+            </div>
+            <div class="col">
+            </div>
         </div>
-        <div class="col-6">
-            <p class = "alignLeft">The two regimens appearing most effective are Capomulin and Ramicane. These regimens are the only ones included in the study with a mean below low. In fact each is below 25 millimeters cubed. Additionally, these two regimens have the lowest standard deviations of all other regimens included in the studied. These regimens may be the most initially chosen treatment options for patients with tumors.
-            </p>
-        </div>
-        <div class="col">
-        </div>
-    </div>
+    </nav>
 
+    <nav id="smallScreenNav">
+        <div class = "container">
+            <!-- specify rows and columns -->
+            <!-- important to use white space when building bootstrap, otherwise difficult to read -->
+            <!-- bootstrap row -->
+            <div class = "row">
+                <div class = "col-xs-12">
+                    <h1 class="alignLeft">Drug Regimen Statistics</h1> <br>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class = "alignCenter">
+            <a href="Visualizations/DrugRegimenStatistics.png">
+                        <img src="Visualizations/DrugRegimenStatistics.png" width="455" height="350" title="Humidity"></img>
+            </a>
+        </div>
+        <br><br>        
+
+        <div class = "row">
+            <div class="col">
+            </div>
+            <div class="col-6">
+                <p class = "alignLeft">The two regimens appearing most effective are Capomulin and Ramicane. These regimens are the only ones included in the study with a mean below low. In fact each is below 25 millimeters cubed. Additionally, these two regimens have the lowest standard deviations of all other regimens included in the studied. These regimens may be the most initially chosen treatment options for patients with tumors.
+                </p>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+    </nav>
         <br>
         <hr>
         <br>

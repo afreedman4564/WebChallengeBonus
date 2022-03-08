@@ -14,8 +14,32 @@
     crossorigin="anonymous">
 </head>
 <body>
-    <nav class="nav nav-pills flex-column flex-sm-row gray">
-        <ul class="nav nav-pills">
+    <nav id="smallScreenNav">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Plots</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item active" href="CapomulinTreatmenti509.html">Capomulin Treatment Mouse i509</a>
+                  <a class="dropdown-item" href="DrugRegimenStatistics.html">Drug Regimen Statistics</a>
+                  <a class="dropdown-item" href="DrugRegimenTimepoint.html">Drug Regimen Timepoint</a>
+                  <a class="dropdown-item" href="MiceDistribution.html">Mice Gender Distribution</a>
+                  <a class="dropdown-item" href="TumorVolume.html">Tumor Volume</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Comparison.html">Comparisons</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Data.html">Data</a>
+            </li>
+        </ul>
+    </nav>
+
+    <nav id="navigationList">
+        <ul class="nav nav-pills flex-column flex-sm-row gray">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
@@ -40,34 +64,67 @@
     <br>
     <br>
     
-    <div class = "container">
-        <!-- specify rows and columns -->
-        <!-- important to use white space when building bootstrap, otherwise difficult to read -->
-        <!-- bootstrap row -->
-        <div class = "row">
-            <div class = "col-xs-12">
-                <h1 class="alignLeft">Capomulin Mice Id 509</h1> <br>
+    <nav id="navigationList">
+        <div class = "container">
+            <!-- specify rows and columns -->
+            <!-- important to use white space when building bootstrap, otherwise difficult to read -->
+            <!-- bootstrap row -->
+            <div class = "row">
+                <div class = "col-xs-12">
+                    <h1 class="alignLeft">Capomulin Mice Id 509</h1> <br>
+                </div>
             </div>
         </div>
-    </div>
-    <br><br>
-    <div class = "alignCenter">
-        <a href="Visualizations/CapomulinTreatmenti509.png">
-                    <img src="Visualizations/CapomulinTreatmenti509.png" width="910" height="700" title="Cloudiness"></img>
-        </a>
-    </div>
-    <br><br>        
+        <br><br>
+        <div class = "alignCenter">
+            <a href="Visualizations/CapomulinTreatmenti509.png">
+                        <img src="Visualizations/CapomulinTreatmenti509.png" width="910" height="700" title="Cloudiness"></img>
+            </a>
+        </div>
+        <br><br>        
 
-    <div class = "row">
-        <div class="col">
+        <div class = "row">
+            <div class="col">
+            </div>
+            <div class="col-6">
+                <p class = "alignLeft">Focusing on mouse with id i509, it is apparent the tumor size decreased consistently over the time of study. Initially, the tumor size increased; however, at around timepoint 20 the tumor precipitously began to decline. Evalution of more mice should be studied to understand the correlation between drug regimen and tumor size along with timepoint.
+                </p>
+            </div>
+            <div class="col">
+            </div>
         </div>
-        <div class="col-6">
-            <p class = "alignLeft">Focusing on mouse with id i509, it is apparent the tumor size decreased consistently over the time of study. Initially, the tumor size increased; however, at around timepoint 20 the tumor precipitously began to decline. Evalution of more mice should be studied to understand the correlation between drug regimen and tumor size along with timepoint.
-            </p>
+    </nav>
+
+    <nav id="smallScreenNav">
+        <div class = "container">
+            <!-- specify rows and columns -->
+            <!-- important to use white space when building bootstrap, otherwise difficult to read -->
+            <!-- bootstrap row -->
+            <div class = "row">
+                <div class = "col-xs-12">
+                    <h1 class="alignLeft">Capomulin Mice Id 509</h1> <br>
+                </div>
+            </div>
         </div>
-        <div class="col">
+        <br><br>
+        <div class = "alignCenter">
+            <a href="Visualizations/CapomulinTreatmenti509.png">
+                        <img src="Visualizations/CapomulinTreatmenti509.png" width="455" height="350" title="Cloudiness"></img>
+            </a>
         </div>
-    </div>
+        <br><br>        
+
+        <div class = "row">
+            <div class="col">
+            </div>
+            <div class="col-6">
+                <p class = "alignLeft">Focusing on mouse with id i509, it is apparent the tumor size decreased consistently over the time of study. Initially, the tumor size increased; however, at around timepoint 20 the tumor precipitously began to decline. Evalution of more mice should be studied to understand the correlation between drug regimen and tumor size along with timepoint.
+                </p>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+    </nav>
 
         <br>
         <hr>
